@@ -1,0 +1,250 @@
+*{
+    font-family: "intel-clear","tahoma",Helvetica,"helvetica",Arial,sans-serif;
+}
+body{
+    margin:0;
+}
+
+.navbar {
+    background-color: #fff;
+  
+}
+
+.nav-link{
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.header-line{
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.user-section{
+    display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap:5%;
+   
+}
+
+.header-search{
+    background:#ddd;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10%;
+}
+.text{
+    display: none;
+}
+
+@media screen and (min-width:1024px){
+ 
+    .text{
+    display: inline-block;
+    }
+    
+}
+
+.heading{
+    display: block;
+    padding: .66em .15em;
+    margin-left: 1em;
+    font-size: .875em;
+    line-height: 1.25em;
+    font-weight: 700;
+    color: #262626;
+    font-family: "intel-clear", "tahoma", Helvetica, "helvetica", Arial, sans-serif;
+}
+
+.banner{
+    background:#0068b5;
+    background-image: url(commons-page/resources/images/svg-backgrounds/background-l1-mosaic.svg);
+    text-align: center;
+    padding: 2.5rem 0;
+    width:100%;
+}
+
+.middle-search{
+height: 3.5rem;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3.25rem;
+    padding-right: 2.1875rem;
+    background: #fff;
+}
+
+.middle-text{
+    font-weight: 100;
+    color: white;
+}
+.middle-texth1{
+    font-size: 1.75rem;
+        line-height: 1.214;
+        font-weight: 300;
+        color: #fff;
+    }
+
+.middle-textp{
+    color:#fff;
+}
+
+
+.btn{
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #fff;
+    background-color: #0068b5;
+    border-radius: 0;
+}
+
+
+@media screen and (min-width:760px){
+    .middle-texth1{
+        font-size: 1.7rem;
+        line-height: 1.214;
+        font-weight:100;
+    }
+    .middle-search{
+        width: 700px;
+    }
+
+
+
+}
+
+@media screen and (min-width:1024px) {
+    .middle-texth1{
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        letter-spacing: -0.0138rem;
+        font-weight: 100;
+        font-family: "intel-one", "intel-clear", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 1.214;
+    margin: 0 0 .5rem;
+}
+
+  
+    .middle-textp{
+        font-size: 1rem;
+    }
+   
+
+.middle-texth4{
+    font-family: "intel-one", "intel-clear", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0 0 1.5rem;
+}  
+.btn{
+    padding: 2px 18px 4px;
+   
+
+}
+.support{
+    display: flex;
+   
+    justify-content: center;
+    width: 30rem;
+
+}
+.card{
+    width: 90rem;
+}
+}
+
+
+
+
+.card-text{
+    color:#0068b5;
+}
+
+
+.footer-section{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "."
+                          "."
+                          "."
+                          "."
+                          "logo";justify-content: center;
+        row-gap: 25px;
+}
+
+.intel-logo{
+    grid-area: logo;
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .footer-section{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto  auto auto;
+        grid-template-areas: "logo ."
+                              "logo ."
+                              "logo ."
+                              "logo .";
+
+         row-gap: 20px;   
+         column-gap: 50px;    
+         align-items: center;              
+
+    }
+    .intel-logo{
+        grid-area:logo;
+        
+    }
+    
+}
+
+li{
+    display: inline;
+}
+
+/* .sticky-btn{
+    background-color: #0068b5;
+    height: 50px;
+    color: #fff;
+    z-index: 1;
+    position:fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: left top;
+    padding: 0 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+} */
+
+
+.sticky-btn {
+    background-color: #0068b5;
+    height: 50px;
+    color: #fff;
+    z-index: 1000; /* Ensure it appears above other content */
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left:-58px; /* Offset to account for the rotated button's width */
+    transform: rotate(90deg) translateY(-50%); /* Rotate and align */
+    transform-origin: center; /* Adjust the rotation point */
+    padding: 0 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+    line-height: 50px; /* Vertically center the text */
+    text-align: center;
+    cursor: pointer;
+}
